@@ -7,16 +7,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
-
+    <script src="js/Game.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/CarRookie.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
 
     <script>
       // Your web app's Firebase configuration
-      //add here
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+      var firebaseConfig = {
+    apiKey: "AIzaSyA2VGSItPHYkEnA4Olni_lafKpB5_6hULA",
+    authDomain: "racing-cars-stripes.firebaseapp.com",
+    databaseURL: "https://racing-cars-stripes.firebaseio.com",
+    projectId: "racing-cars-stripes",
+    storageBucket: "racing-cars-stripes.appspot.com",
+    messagingSenderId: "632737441911",
+    appId: "1:632737441911:web:cab5332c552af3193e3e72"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig)
     </script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
